@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full">
-              <span className="text-xs uppercase tracking-widest text-gray-100">Trusted Expertise</span>
+              <span className="text-xs uppercase tracking-widest text-gray-100">TRUSTED EXPERTISE</span>
               <span className="text-primary font-semibold text-sm">Professional Electrical Services</span>
             </div>
 
@@ -18,8 +18,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-gray-300 text-pretty">
-              Licensed, professional electricians serving Cape Town for over 15 years. We handle residential,
-              commercial, and industrial electrical work with excellence.
+              Qualified staff serving Cape Town for over 15 years. We handle domestic, commercial, solar and backup power electrical work with excellence.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -53,10 +52,10 @@ export default function Hero() {
           <div className="relative hidden md:block">
             <div className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
-                src="/south-africa.png"
-                alt="Map of South Africa highlighting service coverage"
-                width={1156}
-                height={521}
+                src="/hero.jpg"
+                alt="Rooftop solar installation by SP Electrical Services"
+                width={1280}
+                height={662}
                 priority
                 className="h-full w-full object-cover"
                 sizes="(min-width: 1024px) 540px, 100vw"
