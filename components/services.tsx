@@ -4,8 +4,8 @@ export default function Services() {
   const services = [
     {
       icon: Home,
-      title: "Residential Electrical",
-      description: "Home rewiring, installations, repairs, and maintenance for safety and efficiency.",
+      title: "Domestic & Residential Electrical",
+      description: "Home rewiring, installations, repairs, fault finding, and maintenance for safety and efficiency.",
     },
     {
       icon: Building2,
@@ -14,8 +14,8 @@ export default function Services() {
     },
     {
       icon: Zap,
-      title: "Industrial Solutions",
-      description: "High-power systems, machine wiring, and industrial maintenance.",
+      title: "Solar & Backup Power",
+      description: "Solar PV, inverters, batteries, backup power systems, and related electrical work.",
     },
     {
       icon: Lightbulb,
@@ -41,7 +41,7 @@ export default function Services() {
           <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">OUR SERVICES</div>
           <h2 className="text-3xl md:text-4xl font-bold text-black text-pretty">Comprehensive Electrical Solutions</h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            From residential maintenance to industrial installations, we handle all your electrical needs.
+            Domestic and commercial electrical services, from home maintenance and fault finding to business installations, solar and backup power.
           </p>
         </div>
 
