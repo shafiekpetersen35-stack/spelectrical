@@ -4,6 +4,8 @@ import { Montserrat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
+// Cloudflare Pages deployment trigger
+
 const montserrat = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
