@@ -3,8 +3,8 @@ import { CheckCircle2 } from "lucide-react"
 export default function WhyChooseUs() {
   const reasons = [
     {
-      title: "Licensed & Certified",
-      description: "All our electricians are fully licensed and certified by the relevant authorities.",
+      title: "Qualified Staff",
+      description: "Our qualified staff bring electrical expertise to domestic, commercial, solar and backup power projects.",
     },
     {
       title: "Guaranteed Quality",
