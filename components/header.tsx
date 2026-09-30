@@ -13,6 +13,7 @@ export default function Header() {
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Why Us", href: "#why-us" },
+    { label: "Gallery", href: "#gallery" },
     { label: "Contact", href: "#contact" },
   ]
 
@@ -31,14 +32,14 @@ export default function Header() {
           />
           <div>
             <div className="text-2xl font-bold text-black leading-none">
-              SP <span className="text-primary">Electrical</span>
+              SP <span className="text-primary">ELECTRICAL SERVICES</span>
             </div>
-            <p className="text-xs text-gray-600">Professional Services</p>
+            <p className="text-xs text-gray-600">TRUSTED EXPERTISE</p>
           </div>
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <a
               key={item.label}
@@ -51,12 +52,12 @@ export default function Header() {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button className="bg-primary hover:bg-green-700 text-black font-bold">Get Quote</Button>
         </div>
 
         {/* Mobile menu button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
           {isOpen ? <X className="w-6 h-6 text-black" /> : <Menu className="w-6 h-6 text-black" />}
         </button>
       </nav>
