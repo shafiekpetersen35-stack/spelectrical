@@ -7,9 +7,9 @@ import "./globals.css"
 const montserrat = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SP Electrical Services | Professional Electricians in Cape Town",
+  title: "SP Electrical Services | Electricians & Electrical Contractors Cape Town",
   description:
-    "Professional electrical services in Cape Town. Licensed electricians offering residential, commercial, and industrial electrical work.",
+    "SP Electrical Services provides domestic, commercial, solar and backup power electrical services in Cape Town. Trusted expertise, professional workmanship and responsive service.",
   generator: "v0.app",
   icons: {
     icon: [
