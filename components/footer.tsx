@@ -5,9 +5,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-800">
           <div>
             <div className="text-xl font-bold text-white mb-3">
-              SP <span className="text-primary">Electrical</span>
+              SP <span className="text-primary">ELECTRICAL SERVICES</span>
             </div>
-            <p className="text-sm">Professional electrical services serving Cape Town since 2009.</p>
+            <p className="text-sm">TRUSTED EXPERTISE. Domestic, commercial, solar and backup power electrical services serving Cape Town since 2009.</p>
           </div>
 
           <div>
@@ -29,6 +29,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#gallery" className="hover:text-primary transition-colors">
+                  Gallery
+                </a>
+              </li>
+              <li>
                 <a href="#contact" className="hover:text-primary transition-colors">
                   Contact
                 </a>
@@ -40,8 +45,8 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Residential
+                <a href="#services" className="hover:text-primary transition-colors">
+                  Domestic & Residential
                 </a>
               </li>
               <li>
@@ -51,7 +56,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Industrial
+                  Solar & Backup Power
                 </a>
               </li>
               <li>
@@ -73,7 +78,7 @@ export default function Footer() {
         </div>
 
         <div className="text-center text-sm">
-          <p>&copy; 2025 SP Electrical Services. All rights reserved.</p>
+          <p>&copy; 2026 SP Electrical Services. All rights reserved.</p>
         </div>
       </div>
     </footer>
