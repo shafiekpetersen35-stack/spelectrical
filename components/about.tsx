@@ -19,13 +19,12 @@ export default function About() {
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Our team of licensed electricians brings expertise across residential, commercial, and industrial
-              projects. We're committed to safety, quality, and customer satisfaction in every job we undertake.
+              Our qualified staff bring expertise across domestic, commercial, solar and backup power projects. We're committed to safety, quality, and customer satisfaction in every job we undertake.
             </p>
 
             <ul className="space-y-3">
               {[
-                "Licensed & Certified Electricians",
+                "Qualified Staff",
                 "Insurance & Warranty Coverage",
                 "Emergency 24/7 Service Available",
                 "Eco-Friendly Solutions",
