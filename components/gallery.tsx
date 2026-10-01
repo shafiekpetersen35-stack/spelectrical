@@ -9,6 +9,9 @@ const projects = [
   { src: "/IMG-20251110-WA0016.jpg", alt: "Distribution board wiring before work", title: "Distribution Board - Before" },
   { src: "/IMG-20251110-WA0011.jpg", alt: "Before, after and completed distribution board work", title: "Distribution Board - Before & After" },
   { src: "/DBrewire.jpg", alt: "Rewired electrical distribution board", title: "Distribution Board Rewiring" },
+  { src: "/gallery-ceiling-1.jpg", alt: "Timber ceiling with pendant lights in a home", title: "Timber Ceiling & Pendant Lighting" },
+  { src: "/gallery-ceiling-2.jpg", alt: "Timber ceiling with recessed downlights and a pendant", title: "Ceiling Downlights & Pendant" },
+  { src: "/gallery-ceiling-3.jpg", alt: "Decorative chandelier installed in a hallway", title: "Chandelier Installation" },
 ]
 
 export default function Gallery() {
