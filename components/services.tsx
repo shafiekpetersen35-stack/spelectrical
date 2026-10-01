@@ -1,36 +1,46 @@
-import { Lightbulb, Home, Building2, Zap, Settings, AlertCircle } from "lucide-react"
+import { Lightbulb, Home, Building2, Zap, Settings, AlertCircle, FileCheck2, ClipboardCheck } from "lucide-react"
 
 export default function Services() {
   const services = [
     {
       icon: Home,
-      title: "Domestic & Residential Electrical",
-      description: "Home rewiring, installations, repairs, fault finding, and maintenance for safety and efficiency.",
+      title: "New Installations",
+      description: "Safe, efficient electrical installations for homes and businesses, with work aligned to applicable standards and requirements.",
     },
     {
-      icon: Building2,
-      title: "Commercial Electrical",
-      description: "Office and retail electrical systems, upgrades, and troubleshooting.",
+      icon: Settings,
+      title: "Rewiring & Maintenance",
+      description: "Rewiring, upgrades, fault finding and general electrical maintenance for existing installations.",
     },
     {
       icon: Zap,
-      title: "Solar & Backup Power",
-      description: "Solar PV, inverters, batteries, backup power systems, and related electrical work.",
+      title: "Solar & Backup Systems",
+      description: "Solar solutions, inverters, batteries and energy backup systems for domestic and commercial applications.",
+    },
+    {
+      icon: FileCheck2,
+      title: "COCs & Certifications",
+      description: "Certificates of Compliance for electrical work, including inspection and certification support where applicable.",
+    },
+    {
+      icon: ClipboardCheck,
+      title: "SSEG Registrations",
+      description: "Assistance with Small-Scale Embedded Generation (SSEG) registrations and applications for eligible systems.",
+    },
+    {
+      icon: Building2,
+      title: "Domestic & Commercial",
+      description: "Electrical contracting services for residential properties, commercial premises and business installations.",
     },
     {
       icon: Lightbulb,
       title: "Energy Efficient Upgrades",
-      description: "LED conversions, solar installations, and smart home automation.",
+      description: "LED conversions, energy-conscious electrical upgrades and related efficiency improvements.",
     },
     {
       icon: AlertCircle,
       title: "Emergency Repairs",
-      description: "24/7 emergency electrical services for urgent issues.",
-    },
-    {
-      icon: Settings,
-      title: "Maintenance & Inspection",
-      description: "Regular maintenance and safety inspections for your peace of mind.",
+      description: "Urgent electrical fault finding, repairs and emergency assistance.",
     },
   ]
 
@@ -41,11 +51,12 @@ export default function Services() {
           <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">OUR SERVICES</div>
           <h2 className="text-3xl md:text-4xl font-bold text-black text-pretty">Comprehensive Electrical Solutions</h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Domestic and commercial electrical services, from home maintenance and fault finding to business installations, solar and backup power.
+            From new installations and rewiring to COCs, solar and backup power systems, SP Electrical Services
+            provides domestic and commercial electrical services with a focus on safety, compliance and quality.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
