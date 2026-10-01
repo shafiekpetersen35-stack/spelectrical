@@ -6,7 +6,7 @@ export default function Home() {
       <section className="w-full max-w-3xl text-center">
         <div className="relative mx-auto mb-10 aspect-[3.65/1] w-[min(90vw,540px)] overflow-hidden rounded">
           <Image
-            src="/sp-electrical-logo.jpg"
+            src="/sp-electrical-logo-transparent.png"
             alt="SP Electrical Services — Trusted Expertise"
             fill
             priority
