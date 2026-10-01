@@ -40,7 +40,7 @@ export default function Gallery() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {projects.map((project) => (
             <a key={project.src} href={project.src} target="_blank" rel="noreferrer" className="group overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm hover:shadow-lg transition-shadow">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[3/4] overflow-hidden">
                 <Image src={project.src} alt={project.alt} width={900} height={675} className="h-full w-full object-contain p-2 group-hover:scale-[1.02] transition-transform" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
               </div>
               <div className="p-4"><h3 className="font-bold text-black">{project.title}</h3></div>
