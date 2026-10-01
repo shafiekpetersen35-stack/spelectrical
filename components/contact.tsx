@@ -22,7 +22,6 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log("Form submitted:", formData)
-    // Reset form
     setFormData({ name: "", email: "", phone: "", message: "" })
   }
 
@@ -32,16 +31,16 @@ export default function Contact() {
         <div className="text-center mb-12">
           <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">GET IN TOUCH</div>
           <h2 className="text-3xl md:text-4xl font-bold text-pretty">Ready to Get Started?</h2>
-          <p className="mt-4 text-gray-300">Contact us today for a free quote</p>
+          <p className="mt-4 text-gray-300">Contact SP Electrical Services for your electrical, solar, backup power or compliance requirements.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="flex gap-4">
             <Phone className="w-8 h-8 text-primary flex-shrink-0" />
             <div>
               <h3 className="font-bold mb-2">Phone</h3>
-              <p className="text-gray-300">076 672 9270</p>
-              <p className="text-gray-300">24/7 Emergency Line</p>
+              <a href="tel:+27766729270" className="text-gray-300 hover:text-primary transition-colors">+27 76 672 9270</a>
+              <p className="text-gray-300">Emergency assistance available</p>
             </div>
           </div>
 
@@ -49,8 +48,8 @@ export default function Contact() {
             <Mail className="w-8 h-8 text-primary flex-shrink-0" />
             <div>
               <h3 className="font-bold mb-2">Email</h3>
-              <p className="text-gray-300">info@spelectrical.co.za</p>
               <p className="text-gray-300">shafiek@spelectrical.co.za</p>
+              <p className="text-gray-300">info@spelectrical.co.za</p>
             </div>
           </div>
 
@@ -59,12 +58,12 @@ export default function Contact() {
             <div>
               <h3 className="font-bold mb-2">WhatsApp</h3>
               <a
-                href="https://wa.me/27666729270"
+                href="https://wa.me/27766729270"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary transition-colors"
               >
-                +27 66 729 270
+                +27 76 672 9270
               </a>
               <p className="text-gray-300">Quick messaging</p>
             </div>
@@ -73,11 +72,24 @@ export default function Contact() {
           <div className="flex gap-4">
             <MapPin className="w-8 h-8 text-primary flex-shrink-0" />
             <div>
-              <h3 className="font-bold mb-2">Location</h3>
+              <h3 className="font-bold mb-2">Service Area</h3>
               <p className="text-gray-300">Cape Town, Western Cape</p>
-              <p className="text-gray-300">South Africa</p>
+              <p className="text-gray-300">Domestic & Commercial</p>
             </div>
           </div>
+        </div>
+
+        <div className="mb-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            "DOL Licensed",
+            "ECA (SA) Member",
+            "Registered Electrical Contractor",
+            "SSEG Registration Assistance",
+          ].map((item) => (
+            <div key={item} className="border border-primary/40 rounded-lg px-5 py-4 text-center">
+              <p className="font-bold text-primary">{item}</p>
+            </div>
+          ))}
         </div>
 
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-gray-900 rounded-lg p-8">
@@ -116,7 +128,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-primary focus:outline-none"
-              placeholder="(021) 555-0000"
+              placeholder="+27 76 672 9270"
             />
           </div>
 
@@ -129,7 +141,7 @@ export default function Contact() {
               required
               rows={5}
               className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white placeholder-gray-400 focus:border-primary focus:outline-none resize-none"
-              placeholder="Tell us about your project..."
+              placeholder="Tell us about your project, installation, COC or SSEG registration..."
             />
           </div>
 
