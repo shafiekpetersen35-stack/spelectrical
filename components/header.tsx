@@ -21,20 +21,16 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 flex-shrink-0" aria-label="SP Electrical home">
-          <Image
-            src="/logo.svg"
-            alt="SP Electrical logo"
-            width={64}
-            height={64}
-            priority
-            className="h-14 w-14 rounded bg-black object-contain"
-          />
-          <div>
-            <div className="text-2xl font-bold text-black leading-none">
-              SP <span className="text-primary">ELECTRICAL SERVICES</span>
-            </div>
-            <p className="text-xs text-gray-600">TRUSTED EXPERTISE</p>
+        <a href="#home" className="flex items-center flex-shrink-0" aria-label="SP Electrical home">
+          <div className="relative aspect-[3.65/1] w-[min(60vw,300px)] overflow-hidden">
+            <Image
+              src="/sp-electrical-logo.jpg"
+              alt="SP Electrical Services — Trusted Expertise"
+              fill
+              priority
+              sizes="(max-width: 640px) 60vw, 300px"
+              className="object-cover"
+            />
           </div>
         </a>
 

@@ -1,11 +1,19 @@
+import Image from "next/image"
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-800">
           <div>
-            <div className="text-xl font-bold text-white mb-3">
-              SP ELECTRICAL SERVICES (PTY) LTD
+            <div className="relative aspect-[3.65/1] w-full max-w-xs overflow-hidden rounded mb-4">
+              <Image
+                src="/sp-electrical-logo.jpg"
+                alt="SP Electrical Services — Trusted Expertise"
+                fill
+                sizes="(max-width: 768px) 100vw, 320px"
+                className="object-cover"
+              />
             </div>
             <p className="text-sm">
               TRUSTED EXPERTISE. Domestic and commercial electrical services covering new installations,
@@ -39,6 +47,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4">Contact Info</h4>
             <ul className="space-y-2 text-sm">
+              <li>Shafiek Petersen</li>
               <li>Phone: +27 76 672 9270</li>
               <li>Email: shafiek@spelectrical.co.za</li>
               <li>WhatsApp: +27 76 672 9270</li>
