@@ -5,7 +5,7 @@ export default function Services() {
     {
       icon: Home,
       title: "New Installations",
-      description: "Safe, efficient electrical installations for homes and businesses, with work aligned to applicable standards and requirements.",
+      description: "Safe, efficient, SABS-compliant electrical installations for homes and businesses.",
     },
     {
       icon: Settings,
@@ -20,12 +20,12 @@ export default function Services() {
     {
       icon: FileCheck2,
       title: "COCs & Certifications",
-      description: "Certificates of Compliance for electrical work, including inspection and certification support where applicable.",
+      description: "Certificates of Compliance (COCs) for electrical work, including inspection and certification support where applicable.",
     },
     {
       icon: ClipboardCheck,
       title: "SSEG Registrations",
-      description: "Assistance with Small-Scale Embedded Generation (SSEG) registrations and applications for eligible systems.",
+      description: "Assistance with Small-Scale Embedded Generation (SSEG) registration applications for eligible solar and embedded-generation systems.",
     },
     {
       icon: Building2,
@@ -51,8 +51,8 @@ export default function Services() {
           <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">OUR SERVICES</div>
           <h2 className="text-3xl md:text-4xl font-bold text-black text-pretty">Comprehensive Electrical Solutions</h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            From new installations and rewiring to COCs, solar and backup power systems, SP Electrical Services
-            provides domestic and commercial electrical services with a focus on safety, compliance and quality.
+            From SABS-compliant installations and rewiring to COCs, solar and backup power systems, and SSEG
+            registration assistance, SP Electrical Services supports domestic and commercial clients across Cape Town.
           </p>
         </div>
 
