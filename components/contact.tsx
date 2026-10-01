@@ -31,7 +31,7 @@ export default function Contact() {
         <div className="text-center mb-12">
           <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">GET IN TOUCH</div>
           <h2 className="text-3xl md:text-4xl font-bold text-pretty">Ready to Get Started?</h2>
-          <p className="mt-4 text-gray-300">Contact SP Electrical Services for your electrical, solar, backup power or compliance requirements.</p>
+          <p className="mt-4 text-gray-300">Speak with Shafiek Petersen at SP Electrical Services about your electrical, solar, backup power, COC or SSEG registration requirements.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
