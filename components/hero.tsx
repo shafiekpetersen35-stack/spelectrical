@@ -50,18 +50,17 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative hidden md:block">
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-xl md:mx-0">
+            <div className="relative h-full w-full overflow-hidden rounded-3xl border border-primary/30 bg-black shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
-                src="/hero.jpg"
-                alt="Rooftop solar installation by SP Electrical Services"
-                width={1280}
-                height={662}
+                src="/hero-sunsynk.jpg"
+                alt="Sunsynk inverter, backup batteries and electrical protection equipment installed by SP Electrical Services"
+                width={575}
+                height={1280}
                 priority
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
                 sizes="(min-width: 1024px) 540px, 100vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/10 to-transparent" />
             </div>
           </div>
         </div>
