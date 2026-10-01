@@ -13,21 +13,23 @@ export default function About() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed">
-              SP Electrical Services was founded with a simple mission: to provide Cape Town with reliable, professional
-              electrical services. We've grown from a small team to one of the most trusted electrical contractors in
-              the region.
+              SP Electrical Services (Pty) Ltd provides professional electrical contracting services for domestic
+              and commercial clients, covering new installations, rewiring, maintenance, COCs, solar and backup power systems.
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              Our qualified staff bring expertise across domestic, commercial, solar and backup power projects. We're committed to safety, quality, and customer satisfaction in every job we undertake.
+              We also assist clients with SSEG registrations and applications for eligible small-scale embedded generation
+              systems. Our approach is built around safe workmanship, applicable standards, compliance and dependable service.
             </p>
 
             <ul className="space-y-3">
               {[
-                "Qualified Staff",
-                "Insurance & Warranty Coverage",
-                "Emergency 24/7 Service Available",
-                "Eco-Friendly Solutions",
+                "DOL Licensed",
+                "ECA (SA) Member",
+                "Registered Electrical Contractor",
+                "COCs & Certificates of Compliance",
+                "SSEG Registration Assistance",
+                "Domestic & Commercial Services",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <span className="text-primary font-bold">✓</span>
