@@ -10,7 +10,7 @@ export default function Hero() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 bg-primary/20 px-4 py-2 rounded-full">
               <span className="text-xs uppercase tracking-widest text-gray-100">TRUSTED EXPERTISE</span>
-              <span className="text-primary font-semibold text-sm">Professional Electrical Services</span>
+              <span className="text-primary font-semibold text-sm">Registered Electrical Contractor</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-pretty leading-tight">
@@ -18,7 +18,8 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg text-gray-300 text-pretty">
-              Qualified staff serving Cape Town for over 15 years. We handle domestic, commercial, solar and backup power electrical work with excellence.
+              Professional electrical services covering new installations, rewiring, maintenance, COCs,
+              solar and backup power systems, and SSEG registrations across Cape Town.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -29,7 +30,7 @@ export default function Hero() {
                 variant="outline"
                 className="border-primary hover:bg-primary/10 font-bold text-lg py-6 px-8 bg-transparent text-white"
               >
-                Call: 076 672 9270  
+                Call: 076 672 9270
               </Button>
             </div>
 
@@ -39,12 +40,12 @@ export default function Hero() {
                 <p className="text-sm text-gray-400">Years Experience</p>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">5000+</div>
-                <p className="text-sm text-gray-400">Projects Done</p>
+                <div className="text-2xl font-bold text-primary">COCs</div>
+                <p className="text-sm text-gray-400">Certificates of Compliance</p>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">98%</div>
-                <p className="text-sm text-gray-400">Client Satisfaction</p>
+                <div className="text-2xl font-bold text-primary">SSEG</div>
+                <p className="text-sm text-gray-400">Registration Assistance</p>
               </div>
             </div>
           </div>
