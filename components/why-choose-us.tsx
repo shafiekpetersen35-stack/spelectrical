@@ -4,32 +4,32 @@ export default function WhyChooseUs() {
   const reasons = [
     {
       title: "DOL Licensed",
-      description: "Electrical contracting services backed by the DOL Licensed credential stated on our company profile.",
+      description: "Department of Labour licensing is one of the professional credentials highlighted by SP Electrical Services.",
       icon: Award,
     },
     {
-      title: "ECA (SA) Member",
-      description: "SP Electrical Services identifies as an ECA (SA) Member.",
-      icon: ShieldCheck,
-    },
-    {
       title: "Registered Electrical Contractor",
-      description: "Professional electrical contracting for domestic and commercial installations.",
+      description: "Registered electrical contracting for domestic and commercial installations.",
       icon: CheckCircle2,
     },
     {
-      title: "COCs & Certifications",
-      description: "Certificates of Compliance and certification support for applicable electrical work.",
-      icon: FileCheck2,
+      title: "ECA (SA) Member",
+      description: "SP Electrical Services is an Electrical Contractors' Association of South Africa (ECA (SA)) member.",
+      icon: ShieldCheck,
     },
     {
-      title: "SSEG Registration Assistance",
-      description: "Assistance with SSEG registrations and applications for solar and embedded-generation systems.",
+      title: "SSEG Registrations",
+      description: "Assistance with Small-Scale Embedded Generation (SSEG) registration applications for eligible solar and embedded-generation systems.",
       icon: ClipboardCheck,
     },
     {
-      title: "Safety & Compliance",
-      description: "A safety-first approach with attention to applicable electrical standards and compliance requirements.",
+      title: "COCs & Certifications",
+      description: "Certificates of Compliance (COCs), with inspection and certification support for applicable electrical work.",
+      icon: FileCheck2,
+    },
+    {
+      title: "Safety & SABS Compliance",
+      description: "Safe, efficient installations with attention to applicable SABS standards and electrical requirements.",
       icon: ShieldCheck,
     },
   ]
@@ -38,11 +38,11 @@ export default function WhyChooseUs() {
     <section id="why-us" className="py-16 md:py-24 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">CREDENTIALS & WHY US</div>
-          <h2 className="text-3xl md:text-4xl font-bold text-pretty">Professional. Compliant. Trusted.</h2>
+          <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">LICENSING, MEMBERSHIP & REGISTRATIONS</div>
+          <h2 className="text-3xl md:text-4xl font-bold text-pretty">Professional credentials. Compliant electrical work.</h2>
           <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
-            SP Electrical Services provides domestic and commercial electrical services, with credentials and
-            registration support highlighted below.
+            SP Electrical Services is DOL Licensed, an ECA (SA) Member and a Registered Electrical Contractor.
+            We also assist clients with COCs and SSEG registration applications for eligible systems.
           </p>
         </div>
 
