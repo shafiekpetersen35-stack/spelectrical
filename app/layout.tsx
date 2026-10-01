@@ -9,9 +9,20 @@ import "./globals.css"
 const montserrat = Montserrat({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SP Electrical Services | Electricians & Electrical Contractors Cape Town",
+  title: "SP Electrical Services (Pty) Ltd | Registered Electrical Contractor Cape Town",
   description:
-    "SP Electrical Services provides domestic, commercial, solar and backup power electrical services in Cape Town. Trusted expertise, professional workmanship and responsive service.",
+    "SP Electrical Services (Pty) Ltd provides domestic and commercial electrical contracting, new installations, rewiring, maintenance, COCs, solar and backup power, and SSEG registration assistance in Cape Town. DOL Licensed and ECA (SA) Member.",
+  keywords: [
+    "SP Electrical Services",
+    "electrical contractor Cape Town",
+    "registered electrical contractor",
+    "DOL Licensed electrician",
+    "ECA SA Member",
+    "COC electrical certificate",
+    "SSEG registration Cape Town",
+    "solar backup power Cape Town",
+    "rewiring and maintenance",
+  ],
   generator: "v0.app",
   icons: {
     icon: [
