@@ -12,6 +12,19 @@ const projects = [
   { src: "/gallery-ceiling-1.jpg", alt: "Timber ceiling with pendant lights in a home", title: "Timber Ceiling & Pendant Lighting" },
   { src: "/gallery-ceiling-2.jpg", alt: "Timber ceiling with recessed downlights and a pendant", title: "Ceiling Downlights & Pendant" },
   { src: "/gallery-ceiling-3.jpg", alt: "Decorative chandelier installed in a hallway", title: "Chandelier Installation" },
+  { src: "/solar-project-01.jpg", alt: "Hybrid inverter with dual battery backup system", title: "Hybrid Inverter & Battery Backup" },
+  { src: "/solar-project-02.jpg", alt: "Section 34 electrical protection enclosure", title: "Section 34 Electrical Enclosure" },
+  { src: "/solar-project-03.jpg", alt: "Hybrid inverter and solar protection boards", title: "Hybrid Inverter & Protection Boards" },
+  { src: "/solar-project-04.jpg", alt: "LuxePowertek inverter and battery backup installation", title: "Inverter & Battery Backup" },
+  { src: "/solar-project-05.jpg", alt: "Mecer inverter, electrical board and Greenrich battery", title: "Mecer Inverter & Greenrich Battery" },
+  { src: "/solar-project-06.jpg", alt: "Rooftop solar panel array on a metal roof", title: "Rooftop Solar Panel Array" },
+  { src: "/solar-project-07.jpg", alt: "Solar panel mounting structure on a rooftop", title: "Solar Panel Mounting Structure" },
+  { src: "/solar-project-08.jpg", alt: "Close view of a rooftop solar panel array", title: "Rooftop Solar Panels" },
+  { src: "/solar-project-09.jpg", alt: "Solar panels installed on a tiled roof", title: "Tiled-Roof Solar Installation" },
+  { src: "/solar-project-10.jpg", alt: "Sunsynk inverter and Hubble lithium battery system", title: "Sunsynk Inverter & Hubble Battery" },
+  { src: "/solar-project-11.jpg", alt: "Rooftop solar installation at Keating P1", title: "Keating P1 Solar Installation" },
+  { src: "/solar-project-12.jpg", alt: "Residential rooftop solar panel array", title: "Residential Solar Panel Array" },
+  { src: "/solar-project-13.jpg", alt: "Technician working beside a rooftop solar array", title: "Solar Installation Work" },
 ]
 
 export default function Gallery() {
