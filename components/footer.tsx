@@ -5,80 +5,52 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-800">
           <div>
             <div className="text-xl font-bold text-white mb-3">
-              SP <span className="text-primary">ELECTRICAL SERVICES</span>
+              SP ELECTRICAL SERVICES (PTY) LTD
             </div>
-            <p className="text-sm">TRUSTED EXPERTISE. Domestic, commercial, solar and backup power electrical services serving Cape Town since 2009.</p>
+            <p className="text-sm">
+              TRUSTED EXPERTISE. Domestic and commercial electrical services covering new installations,
+              rewiring, maintenance, COCs, solar and backup power systems, and SSEG registration assistance.
+            </p>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#home" className="hover:text-primary transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-primary transition-colors">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-primary transition-colors">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#gallery" className="hover:text-primary transition-colors">
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:text-primary transition-colors">
-                  Contact
-                </a>
-              </li>
+              <li><a href="#home" className="hover:text-primary transition-colors">Home</a></li>
+              <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Services</a></li>
+              <li><a href="#why-us" className="hover:text-primary transition-colors">Credentials</a></li>
+              <li><a href="#gallery" className="hover:text-primary transition-colors">Gallery</a></li>
+              <li><a href="#contact" className="hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#services" className="hover:text-primary transition-colors">
-                  Domestic & Residential
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Commercial
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Solar & Backup Power
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Emergency
-                </a>
-              </li>
+              <li><a href="#services" className="hover:text-primary transition-colors">New Installations</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Rewiring & Maintenance</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">Solar & Backup Systems</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">COCs & Certifications</a></li>
+              <li><a href="#services" className="hover:text-primary transition-colors">SSEG Registrations</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-white mb-4">Contact Info</h4>
             <ul className="space-y-2 text-sm">
-              <li>Phone: 076 672 9270</li>
-              <li>Email: info@spelectrical.co.za</li>
-              <li>Available: 24/7 for emergencies</li>
+              <li>Phone: +27 76 672 9270</li>
+              <li>Email: shafiek@spelectrical.co.za</li>
+              <li>WhatsApp: +27 76 672 9270</li>
+              <li>DOL Licensed</li>
+              <li>ECA (SA) Member</li>
+              <li>Registered Electrical Contractor</li>
             </ul>
           </div>
         </div>
 
         <div className="text-center text-sm">
-          <p>&copy; 2026 SP Electrical Services. All rights reserved.</p>
+          <p>&copy; 2026 SP Electrical Services (Pty) Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
