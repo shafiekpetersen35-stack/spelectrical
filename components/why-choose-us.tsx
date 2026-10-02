@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
             We also assist clients with COCs and SSEG registration applications for eligible systems.
           </p>
           <p className="mt-4 text-gray-300 max-w-3xl mx-auto font-medium">
-            All work is done according to the specific requirements of SANS 10142-1:2024 Edition 3.2 incorporated under the OHS Act.
+            Electrical installation work is carried out in accordance with the applicable requirements of the current edition of SANS 10142-1 and the Electrical Installation Regulations under the Occupational Health and Safety Act.
           </p>
         </div>
 
