@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="relative aspect-[3.65/1] w-full max-w-xs overflow-hidden rounded mb-4">
               <Image
-                src="/sp-electrical-logo.jpg"
+                src="/sp-electrical-logo-transparent.png"
                 alt="SP Electrical Services — Trusted Expertise"
                 fill
                 sizes="(max-width: 768px) 100vw, 320px"
