@@ -50,6 +50,7 @@ export default function Footer() {
               <li>Shafiek Petersen</li>
               <li>Phone: +27 76 672 9270</li>
               <li>Email: shafiek@spelectrical.co.za</li>
+              <li>Website: <a href="https://www.spelectrical.co.za" className="hover:text-primary transition-colors">www.spelectrical.co.za</a></li>
               <li>WhatsApp: +27 76 672 9270</li>
               <li>DOL Licensed</li>
               <li>ECA (SA) Member</li>
