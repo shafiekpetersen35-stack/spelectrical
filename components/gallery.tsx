@@ -1,4 +1,9 @@
+"use client"
+
 import Image from "next/image"
+import { useState } from "react"
+
+const PAGE_SIZE = 8
 
 const projects = [
   { src: "/hero.jpg", alt: "Rooftop solar installation", title: "Rooftop Solar Installation" },
@@ -38,6 +43,11 @@ const projects = [
 ]
 
 export default function Gallery() {
+  const [currentPage, setCurrentPage] = useState(1)
+  const pageCount = Math.ceil(projects.length / PAGE_SIZE)
+  const startIndex = (currentPage - 1) * PAGE_SIZE
+  const visibleProjects = projects.slice(startIndex, startIndex + PAGE_SIZE)
+
   return (
     <section id="gallery" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,7 +58,7 @@ export default function Gallery() {
           <p className="mt-2 text-sm font-semibold text-gray-800">Real installations. Real electrical work. Professional results.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {projects.map((project) => (
+          {visibleProjects.map((project) => (
             <a key={project.src} href={project.src} target="_blank" rel="noreferrer" className="group overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm hover:shadow-lg transition-shadow">
               <div className="aspect-[3/4] overflow-hidden">
                 <Image src={project.src} alt={project.alt} width={900} height={675} className="h-full w-full object-contain p-2 group-hover:scale-[1.02] transition-transform" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
@@ -56,6 +66,45 @@ export default function Gallery() {
               <div className="p-4"><h3 className="font-bold text-black">{project.title}</h3></div>
             </a>
           ))}
+        </div>
+        <div className="mt-10 flex flex-col items-center gap-4">
+          <p className="text-sm text-gray-600" aria-live="polite">
+            Showing {startIndex + 1}–{Math.min(startIndex + PAGE_SIZE, projects.length)} of {projects.length} projects
+          </p>
+          <nav aria-label="Gallery pages" className="flex flex-wrap items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => setCurrentPage((page) => Math.max(1, page - 1))}
+              disabled={currentPage === 1}
+              className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:border-primary hover:text-primary disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Previous
+            </button>
+            {Array.from({ length: pageCount }, (_, index) => index + 1).map((page) => (
+              <button
+                key={page}
+                type="button"
+                onClick={() => setCurrentPage(page)}
+                aria-current={currentPage === page ? "page" : undefined}
+                aria-label={`Go to gallery page ${page}`}
+                className={`h-10 min-w-10 rounded-lg border px-3 text-sm font-semibold transition-colors ${
+                  currentPage === page
+                    ? "border-primary bg-primary text-black"
+                    : "border-gray-300 text-gray-800 hover:border-primary hover:text-primary"
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+            <button
+              type="button"
+              onClick={() => setCurrentPage((page) => Math.min(pageCount, page + 1))}
+              disabled={currentPage === pageCount}
+              className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:border-primary hover:text-primary disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              Next
+            </button>
+          </nav>
         </div>
       </div>
     </section>
