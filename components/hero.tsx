@@ -50,7 +50,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-xl md:mx-0">
+          <div className="relative mx-auto aspect-[4/3] w-full max-w-xl md:mx-0">
             <div className="relative h-full w-full overflow-hidden rounded-3xl border border-primary/30 bg-black shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
                 src="/hero-electrician.jpg"
@@ -58,7 +58,7 @@ export default function Hero() {
                 width={575}
                 height={1280}
                 priority
-                className="h-full w-full object-contain"
+                className="h-full w-full object-cover"
                 sizes="(min-width: 1024px) 540px, 100vw"
               />
             </div>
