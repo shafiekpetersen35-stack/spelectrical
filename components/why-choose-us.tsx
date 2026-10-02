@@ -45,6 +45,9 @@ export default function WhyChooseUs() {
             SP Electrical Services is DOL Licensed, an ECA (SA) Member and a Registered Electrical Contractor.
             We also assist clients with COCs and SSEG registration applications for eligible systems.
           </p>
+          <p className="mt-4 text-gray-300 max-w-3xl mx-auto font-medium">
+            All work is done according to the specific requirements of SANS 10142-1:2024 Edition 3.2 incorporated under the OHS Act.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
