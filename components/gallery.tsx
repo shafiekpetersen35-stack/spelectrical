@@ -25,6 +25,16 @@ const projects = [
   { src: "/solar-project-11.jpg", alt: "Rooftop solar installation at Keating P1", title: "Solar Installation" },
   { src: "/solar-project-12.jpg", alt: "Residential rooftop solar panel array", title: "Residential Solar Panel Array" },
   { src: "/solar-project-13.jpg", alt: "Technician working beside a rooftop solar array", title: "Solar Installation Work" },
+  { src: "/gallery/electrical-installation-1.jpg", alt: "Electrician working at an electrical control panel", title: "Electrical Installation Work" },
+  { src: "/gallery/electrical-installation-2.jpg", alt: "Electrician installing and connecting electrical equipment", title: "Electrical Panel Installation" },
+  { src: "/gallery/electrical-installation-3.jpg", alt: "Electrician working beside a distribution board", title: "Electrical Work in Progress" },
+  { src: "/gallery/recessed-ceiling-lighting-1.jpg", alt: "Recessed downlights installed in a finished ceiling", title: "Recessed Ceiling Lighting" },
+  { src: "/gallery/recessed-ceiling-lighting-2.jpg", alt: "Downlights illuminating a newly finished room", title: "Downlight Installation" },
+  { src: "/gallery/recessed-ceiling-lighting-3.jpg", alt: "Ceiling downlights installed along a hallway", title: "Hallway Ceiling Lighting" },
+  { src: "/gallery/inverter-installation-work.jpg", alt: "Electrician wiring an inverter and electrical board", title: "Inverter Installation Work" },
+  { src: "/gallery/distribution-board-installation.jpg", alt: "Neatly wired electrical distribution board", title: "Distribution Board Installation" },
+  { src: "/gallery/inverter-wiring-work.jpg", alt: "Electrician wiring a dual inverter installation", title: "Inverter Wiring & Commissioning" },
+  { src: "/gallery/synapse-inverter-installation.jpg", alt: "Two Synapse inverters installed beside an electrical distribution board", title: "Dual Synapse Inverter Installation" },
 ]
 
 export default function Gallery() {
