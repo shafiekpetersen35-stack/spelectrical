@@ -13,7 +13,7 @@ const projects = [
   { src: "/gallery-ceiling-2.jpg", alt: "Timber ceiling with recessed downlights and a pendant", title: "Ceiling Downlights & Pendant" },
   { src: "/gallery-ceiling-3.jpg", alt: "Decorative chandelier installed in a hallway", title: "Chandelier Installation" },
   { src: "/solar-project-01.jpg", alt: "Hybrid inverter with dual battery backup system", title: "Hybrid Inverter & Battery Backup" },
-  { src: "/solar-project-02.jpg", alt: "Section 34 electrical protection enclosure", title: "Section 34 Electrical Enclosure" },
+  { src: "/solar-project-02.jpg", alt: "Section 34 electrical protection enclosure", title: "kWh Meter Installation" },
   { src: "/solar-project-03.jpg", alt: "Hybrid inverter and solar protection boards", title: "Hybrid Inverter & Protection Boards" },
   { src: "/solar-project-04.jpg", alt: "LuxePowertek inverter and battery backup installation", title: "Inverter & Battery Backup" },
   { src: "/solar-project-05.jpg", alt: "Mecer inverter, electrical board and Greenrich battery", title: "Mecer Inverter & Greenrich Battery" },
