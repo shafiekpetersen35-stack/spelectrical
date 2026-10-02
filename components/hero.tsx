@@ -53,8 +53,8 @@ export default function Hero() {
           <div className="relative mx-auto aspect-[4/5] w-full max-w-xl md:mx-0">
             <div className="relative h-full w-full overflow-hidden rounded-3xl border border-primary/30 bg-black shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
-                src="/hero-sunsynk.jpg"
-                alt="Sunsynk inverter, backup batteries and electrical protection equipment installed by SP Electrical Services"
+                src="/hero-electrician.jpg"
+                alt="SP Electrical Services electrician wiring inverter and distribution board equipment"
                 width={575}
                 height={1280}
                 priority
