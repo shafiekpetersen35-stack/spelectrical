@@ -22,7 +22,7 @@ const projects = [
   { src: "/solar-project-08.jpg", alt: "Close view of a rooftop solar panel array", title: "Rooftop Solar Panels" },
   { src: "/solar-project-09.jpg", alt: "Solar panels installed on a tiled roof", title: "Tiled-Roof Solar Installation" },
   { src: "/solar-project-10.jpg", alt: "Sunsynk inverter and Hubble lithium battery system", title: "Sunsynk Inverter & Hubble Battery" },
-  { src: "/solar-project-11.jpg", alt: "Rooftop solar installation at Keating P1", title: "Keating P1 Solar Installation" },
+  { src: "/solar-project-11.jpg", alt: "Rooftop solar installation at Keating P1", title: "Solar Installation" },
   { src: "/solar-project-12.jpg", alt: "Residential rooftop solar panel array", title: "Residential Solar Panel Array" },
   { src: "/solar-project-13.jpg", alt: "Technician working beside a rooftop solar array", title: "Solar Installation Work" },
 ]
