@@ -50,13 +50,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-[4/3] w-full max-w-xl md:mx-0">
+          <div className="relative mx-auto aspect-[20/9] w-full max-w-xl md:mx-0">
             <div className="relative h-full w-full overflow-hidden rounded-3xl border border-primary/30 bg-black shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
-                src="/hero-electrician.jpg"
-                alt="SP Electrical Services electrician wiring inverter and distribution board equipment"
-                width={575}
-                height={1280}
+                src="/hero-solar-backup.jpg"
+                alt="Rooftop solar panels and Sunsynk inverter with battery backup installation"
+                width={1600}
+                height={720}
                 priority
                 className="h-full w-full object-cover"
                 sizes="(min-width: 1024px) 540px, 100vw"
