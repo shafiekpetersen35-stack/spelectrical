@@ -4,12 +4,10 @@ const testimonials = [
   {
     name: "Neil Andrews",
     detail: "Neil Andrews Construction (Pty) Ltd",
-    source: "Client recommendation",
     text: "I have always been more than satisfied with his services. His work is neat and of impeccable quality, and he goes the extra mile to get the job done right the first time.",
   },
   {
     name: "Henriette Abrahams",
-    source: "Client recommendation",
     text: "Professional, competent and trustworthy. His work is neat, and he is always on call and willing to assist when needed.",
   },
   {
@@ -29,7 +27,7 @@ export default function Testimonials() {
         <div className="mb-12 text-center">
           <p className="mb-3 inline-block text-sm font-bold tracking-widest text-primary">CLIENT REVIEWS</p>
           <h2 className="text-pretty text-3xl font-bold text-black md:text-4xl">
-            Why Cape Town Customers Recommend SP Electrical
+            Why Cape Town Customers Recommend SP Electrical Services
           </h2>
         </div>
 
@@ -41,7 +39,6 @@ export default function Testimonials() {
               <div className="border-t border-gray-100 pt-5">
                 <p className="font-bold text-black">{testimonial.name}</p>
                 {testimonial.detail && <p className="mt-1 text-sm text-gray-600">{testimonial.detail}</p>}
-                {testimonial.source && <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary">{testimonial.source}</p>}
               </div>
             </article>
           ))}
