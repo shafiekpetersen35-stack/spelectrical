@@ -8,21 +8,16 @@ const testimonials = [
     text: "I have always been more than satisfied with his services. His work is neat and of impeccable quality, and he goes the extra mile to get the job done right the first time.",
   },
   {
-    name: "Henriette Abraham",
-    detail: "Property owner",
+    name: "Henriette Abrahams",
     source: "Client recommendation",
     text: "Professional, competent and trustworthy. His work is neat, and he is always on call and willing to assist when needed.",
   },
   {
     name: "Derek Roy Davis",
-    detail: "Facebook recommendation",
-    source: "Facebook",
     text: "Meticulously professional and efficient installation. Thank you!",
   },
   {
     name: "Sandy Simanga Mnyanda",
-    detail: "Facebook recommendation",
-    source: "Facebook",
     text: "Best quality service! I would recommend.",
   },
 ]
@@ -45,8 +40,8 @@ export default function Testimonials() {
               <p className="mb-6 flex-1 text-gray-700 italic">“{testimonial.text}”</p>
               <div className="border-t border-gray-100 pt-5">
                 <p className="font-bold text-black">{testimonial.name}</p>
-                <p className="mt-1 text-sm text-gray-600">{testimonial.detail}</p>
-                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary">{testimonial.source}</p>
+                {testimonial.detail && <p className="mt-1 text-sm text-gray-600">{testimonial.detail}</p>}
+                {testimonial.source && <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary">{testimonial.source}</p>}
               </div>
             </article>
           ))}
