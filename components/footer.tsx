@@ -48,10 +48,10 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4">Contact Info</h4>
             <ul className="space-y-2 text-sm">
               <li>Shafiek Petersen</li>
-              <li>Phone: +27 76 672 9270</li>
-              <li>Email: shafiek@spelectrical.co.za</li>
+              <li>Phone: <a href="tel:+27766729270" className="hover:text-primary transition-colors">+27 76 672 9270</a></li>
+              <li>Email: <a href="mailto:info@spelectrical.co.za" className="hover:text-primary transition-colors">info@spelectrical.co.za</a></li>
               <li>Website: <a href="https://www.spelectrical.co.za" className="hover:text-primary transition-colors">www.spelectrical.co.za</a></li>
-              <li>WhatsApp: +27 76 672 9270</li>
+              <li>WhatsApp: <a href="https://wa.me/27766729270" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+27 76 672 9270</a></li>
               <li>DOL Licensed</li>
               <li>ECA (SA) Member</li>
               <li>Registered Electrical Contractor</li>

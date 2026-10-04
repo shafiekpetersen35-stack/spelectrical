@@ -49,18 +49,18 @@ export default function Header() {
 
         {/* CTA Button */}
         <div className="hidden lg:block">
-          <Button className="bg-primary hover:bg-green-700 text-black font-bold">Get Quote</Button>
+          <Button asChild className="bg-primary hover:bg-green-700 text-black font-bold"><a href="#contact">Get Quote</a></Button>
         </div>
 
         {/* Mobile menu button */}
-        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu" aria-expanded={isOpen} aria-controls="mobile-navigation">
           {isOpen ? <X className="w-6 h-6 text-black" /> : <Menu className="w-6 h-6 text-black" />}
         </button>
       </nav>
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200">
+        <div id="mobile-navigation" className="lg:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <a
@@ -72,7 +72,7 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full bg-primary hover:bg-green-700 text-black font-bold mt-4">Get Quote</Button>
+            <Button asChild className="w-full bg-primary hover:bg-green-700 text-black font-bold mt-4"><a href="#contact" onClick={() => setIsOpen(false)}>Get Quote</a></Button>
           </div>
         </div>
       )}

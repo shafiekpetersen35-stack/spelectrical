@@ -23,14 +23,15 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-green-700 text-black font-bold text-lg py-6 px-8">
-                Get Free Quote
+              <Button asChild className="bg-primary hover:bg-green-700 text-black font-bold text-lg py-6 px-8">
+                <a href="#contact">Get Free Quote</a>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 className="border-primary hover:bg-primary/10 font-bold text-lg py-6 px-8 bg-transparent text-white"
               >
-                Call: 076 672 9270
+                <a href="tel:+27766729270">Call: 076 672 9270</a>
               </Button>
             </div>
 
