@@ -4,6 +4,7 @@ import About from "@/components/about"
 import Services from "@/components/services"
 import Gallery from "@/components/gallery"
 import WhyChooseUs from "@/components/why-choose-us"
+import Testimonials from "@/components/testimonials"
 import ServiceArea from "@/components/service-area"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Gallery />
       <WhyChooseUs />
+      <Testimonials />
       <ServiceArea />
       <Contact />
       <Footer />

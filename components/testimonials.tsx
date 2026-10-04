@@ -1,49 +1,54 @@
-import { Star } from "lucide-react"
+import { Quote } from "lucide-react"
+
+const testimonials = [
+  {
+    name: "Neil Andrews",
+    detail: "Neil Andrews Construction (Pty) Ltd",
+    source: "Client recommendation",
+    text: "I have always been more than satisfied with his services. His work is neat and of impeccable quality, and he goes the extra mile to get the job done right the first time.",
+  },
+  {
+    name: "Henriette Abraham",
+    detail: "Property owner",
+    source: "Client recommendation",
+    text: "Professional, competent and trustworthy. His work is neat, and he is always on call and willing to assist when needed.",
+  },
+  {
+    name: "Derek Roy Davis",
+    detail: "Facebook recommendation",
+    source: "Facebook",
+    text: "Meticulously professional and efficient installation. Thank you!",
+  },
+  {
+    name: "Sandy Simanga Mnyanda",
+    detail: "Facebook recommendation",
+    source: "Facebook",
+    text: "Best quality service! I would recommend.",
+  },
+]
 
 export default function Testimonials() {
-  const testimonials = [
-    {
-      name: "John Smith",
-      location: "Constantia, Cape Town",
-      rating: 5,
-      text: "SP Electrical were amazing! They rewired our entire house professionally and on budget. Highly recommended.",
-    },
-    {
-      name: "Sarah Johnson",
-      location: "Camps Bay, Cape Town",
-      rating: 5,
-      text: "Had an emergency electrical issue at midnight. They responded within 30 minutes and fixed it perfectly!",
-    },
-    {
-      name: "Michael Chen",
-      location: "Business Owner, CBD",
-      rating: 5,
-      text: "Professional team, excellent communication, and great pricing. We use them for all our office electrical needs.",
-    },
-  ]
-
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">TESTIMONIALS</div>
-          <h2 className="text-3xl md:text-4xl font-bold text-black text-pretty">What Our Clients Say</h2>
+    <section id="reviews" className="bg-gray-50 py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <p className="mb-3 inline-block text-sm font-bold tracking-widest text-primary">CLIENT REVIEWS</p>
+          <h2 className="text-pretty text-3xl font-bold text-black md:text-4xl">
+            Why Cape Town Customers Recommend SP Electrical
+          </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-8">
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
-              <div>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {testimonials.map((testimonial) => (
+            <article key={testimonial.name} className="flex flex-col rounded-xl border border-gray-200 bg-white p-7 shadow-sm">
+              <Quote aria-hidden="true" className="mb-4 h-7 w-7 fill-primary/10 text-primary" />
+              <p className="mb-6 flex-1 text-gray-700 italic">“{testimonial.text}”</p>
+              <div className="border-t border-gray-100 pt-5">
                 <p className="font-bold text-black">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.location}</p>
+                <p className="mt-1 text-sm text-gray-600">{testimonial.detail}</p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-primary">{testimonial.source}</p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
