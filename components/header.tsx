@@ -9,19 +9,19 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Why Us", href: "#why-us" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "Services", href: "/#services" },
+    { label: "Why Us", href: "/#why-us" },
+    { label: "Gallery", href: "/#gallery" },
+    { label: "Contact", href: "/#contact" },
   ]
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center flex-shrink-0" aria-label="SP Electrical home">
+        <a href="/#home" className="flex items-center flex-shrink-0" aria-label="SP Electrical home">
           <div className="relative aspect-[3.65/1] w-[min(60vw,300px)] overflow-hidden">
             <Image
               src="/sp-electrical-logo.jpg"
@@ -49,7 +49,7 @@ export default function Header() {
 
         {/* CTA Button */}
         <div className="hidden lg:block">
-          <Button asChild className="bg-primary hover:bg-green-700 text-black font-bold"><a href="#contact">Get Quote</a></Button>
+          <Button asChild className="bg-primary hover:bg-green-700 text-black font-bold"><a href="/#contact">Get Quote</a></Button>
         </div>
 
         {/* Mobile menu button */}
@@ -72,7 +72,7 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <Button asChild className="w-full bg-primary hover:bg-green-700 text-black font-bold mt-4"><a href="#contact" onClick={() => setIsOpen(false)}>Get Quote</a></Button>
+            <Button asChild className="w-full bg-primary hover:bg-green-700 text-black font-bold mt-4"><a href="/#contact" onClick={() => setIsOpen(false)}>Get Quote</a></Button>
           </div>
         </div>
       )}
