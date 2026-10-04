@@ -22,6 +22,7 @@ export default function About() {
           <ul className="space-y-3">
             {[
               "DOL Licensed",
+              "Fully Insured",
               "ECA (SA) Member",
               "Registered Electrical Contractor",
               "COCs & Certificates of Compliance",
