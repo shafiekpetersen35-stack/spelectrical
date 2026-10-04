@@ -2,16 +2,37 @@ import { MapPin } from "lucide-react"
 
 export default function ServiceArea() {
   const areas = [
+    "Hout Bay",
+    "Camps Bay",
+    "Clifton",
+    "Milnerton",
+    "Mowbray",
+    "Bantry Bay",
+    "Sea Point",
+    "Green Point",
+    "Fresnaye",
+    "Oranjezicht",
+    "Newlands",
+    "Woodstock",
+    "Tamboerskloof",
+    "Gardens",
+    "De Waterkant",
+    "Cape Town CBD",
+    "Constantia",
+    "Claremont",
+    "Paarden Eiland",
+    "Bishopscourt",
+    "Tokai",
+    "Diep River",
+    "Plumstead",
+    "Kenilworth",
+    "Rondebosch",
     "Central Cape Town",
     "Northern Suburbs",
     "Southern Suburbs",
     "Eastern Suburbs",
     "Atlantic Seaboard",
-    "Constantia",
     "Observatory",
-    "Rondebosch",
-    "Newlands",
-    "Camps Bay",
   ]
 
   return (
@@ -24,7 +45,7 @@ export default function ServiceArea() {
         </div>
 
         <div className="bg-white rounded-lg p-8 md:p-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {areas.map((area) => (
               <div key={area} className="flex items-center gap-3 p-4 hover:bg-gray-50 rounded transition-colors">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0" />

@@ -21,8 +21,11 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    setFormData({ name: "", email: "", phone: "", message: "" })
+    const subject = encodeURIComponent("Website enquiry from " + formData.name)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || "Not provided"}\n\n${formData.message}`,
+    )
+    window.location.href = `mailto:info@spelectrical.co.za?subject=${subject}&body=${body}`
   }
 
   return (
@@ -31,7 +34,7 @@ export default function Contact() {
         <div className="text-center mb-12">
           <div className="inline-block text-primary font-bold text-sm tracking-widest mb-3">GET IN TOUCH</div>
           <h2 className="text-3xl md:text-4xl font-bold text-pretty">Ready to Get Started?</h2>
-          <p className="mt-4 text-gray-300">Speak with Shafiek Petersen at SP Electrical Services about your electrical, solar, backup power, COC or SSEG registration requirements.</p>
+          <p className="mt-4 text-gray-300">Contact SP Electrical Services about your electrical, solar, backup power, COC or SSEG registration requirements.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -48,8 +51,7 @@ export default function Contact() {
             <Mail className="w-8 h-8 text-primary flex-shrink-0" />
             <div>
               <h3 className="font-bold mb-2">Email</h3>
-              <p className="text-gray-300">shafiek@spelectrical.co.za</p>
-              <p className="text-gray-300">info@spelectrical.co.za</p>
+              <a href="mailto:info@spelectrical.co.za" className="text-gray-300 hover:text-primary transition-colors">info@spelectrical.co.za</a>
             </div>
           </div>
 

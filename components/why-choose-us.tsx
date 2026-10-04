@@ -1,4 +1,5 @@
 import { CheckCircle2, Award, ShieldCheck, FileCheck2, ClipboardCheck } from "lucide-react"
+import Image from "next/image"
 
 export default function WhyChooseUs() {
   const reasons = [
@@ -44,6 +45,9 @@ export default function WhyChooseUs() {
             SP Electrical Services is DOL Licensed, an ECA (SA) Member and a Registered Electrical Contractor.
             We also assist clients with COCs and SSEG registration applications for eligible systems.
           </p>
+          <p className="mt-4 text-gray-300 max-w-3xl mx-auto font-medium">
+            Electrical installation work is carried out in accordance with the applicable requirements of the current edition of SANS 10142-1 and the Electrical Installation Regulations under the Occupational Health and Safety Act.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -59,6 +63,42 @@ export default function WhyChooseUs() {
               </div>
             )
           })}
+        </div>
+
+        <div className="mt-16">
+          <h3 className="text-center text-xl font-bold mb-6">Professional bodies & registration</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 items-stretch">
+            <div className="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl bg-white p-5 text-center">
+              <Image
+                src="/credentials/department-of-employment-labour-sa.png"
+                alt="Department of Employment and Labour, Republic of South Africa"
+                width={226}
+                height={102}
+                className="h-20 w-full object-contain"
+              />
+              <p className="text-sm font-semibold text-gray-800">Department of Employment and Labour</p>
+            </div>
+            <div className="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl bg-white p-5 text-center">
+              <Image
+                src="/credentials/eca-sa.png"
+                alt="Electrical Contractors’ Association of South Africa (ECA)"
+                width={241}
+                height={102}
+                className="h-20 w-full object-contain"
+              />
+              <p className="text-sm font-semibold text-gray-800">Electrical Contractors’ Association of South Africa</p>
+            </div>
+            <div className="flex min-h-36 flex-col items-center justify-center gap-3 rounded-xl bg-white p-5 text-center">
+              <Image
+                src="/credentials/cidb.png"
+                alt="Construction Industry Development Board (cidb)"
+                width={247}
+                height={102}
+                className="h-20 w-full object-contain"
+              />
+              <p className="text-sm font-semibold text-gray-800">Construction Industry Development Board</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

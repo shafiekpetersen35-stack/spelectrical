@@ -23,14 +23,15 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-green-700 text-black font-bold text-lg py-6 px-8">
-                Get Free Quote
+              <Button asChild className="bg-primary hover:bg-green-700 text-black font-bold text-lg py-6 px-8">
+                <a href="#contact">Get Free Quote</a>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 className="border-primary hover:bg-primary/10 font-bold text-lg py-6 px-8 bg-transparent text-white"
               >
-                Call: 076 672 9270
+                <a href="tel:+27766729270">Call: 076 672 9270</a>
               </Button>
             </div>
 
@@ -50,18 +51,17 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="relative hidden md:block">
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
+          <div className="relative mx-auto aspect-[20/9] w-full max-w-xl md:mx-0">
+            <div className="relative h-full w-full overflow-hidden rounded-3xl border border-primary/30 bg-black shadow-[0_25px_65px_rgba(0,0,0,0.55)]">
               <Image
-                src="/hero.jpg"
-                alt="Rooftop solar installation by SP Electrical Services"
-                width={1280}
-                height={662}
+                src="/hero-solar-backup.jpg"
+                alt="Rooftop solar panels and Sunsynk inverter with battery backup installation"
+                width={1600}
+                height={720}
                 priority
                 className="h-full w-full object-cover"
                 sizes="(min-width: 1024px) 540px, 100vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/10 to-transparent" />
             </div>
           </div>
         </div>
