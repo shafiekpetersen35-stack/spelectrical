@@ -6,13 +6,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-gray-800">
           <div>
-            <div className="relative aspect-[3.65/1] w-full max-w-xs overflow-hidden rounded mb-4">
+            <div className="relative aspect-[3/1] w-full max-w-xs overflow-hidden rounded mb-4">
               <Image
-                src="/sp-electrical-logo-transparent.png"
+                src="/sp-electrical-logo-footer.png"
                 alt="SP Electrical Services — Trusted Expertise"
                 fill
                 sizes="(max-width: 768px) 100vw, 320px"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <p className="text-sm">
