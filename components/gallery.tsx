@@ -39,7 +39,9 @@ const projects = [
   { src: "/gallery/inverter-installation-work.jpg", alt: "Electrician wiring an inverter and electrical board", title: "Inverter Installation Work" },
   { src: "/gallery/distribution-board-installation.jpg", alt: "Neatly wired electrical distribution board", title: "Distribution Board Installation" },
   { src: "/gallery/inverter-wiring-work.jpg", alt: "Electrician wiring a dual inverter installation", title: "Inverter Wiring & Commissioning" },
-  { src: "/gallery/synapse-inverter-installation.jpg", alt: "Two Synapse inverters installed beside an electrical distribution board", title: "Dual Synapse Inverter Installation" },
+  { src: "/gallery/synapse-inverter-installation.jpg", alt: "Two Synapse inverters installed beside an electrical distribution board", title: "Dual Synapse Inverter Installation" },  { src: "/solar-project-14.jpg", alt: "Solar panels installed on a tiled residential roof", title: "Tiled-Roof Solar Panel Installation" },
+  { src: "/solar-project-15.jpg", alt: "Solar panel array installed across a tiled roof", title: "Residential Solar Panel Installation" },
+  { src: "/solar-project-16.jpg", alt: "Technicians installing solar panels on a tiled roof", title: "Solar Installation in Progress" },
 ]
 
 export default function Gallery() {
